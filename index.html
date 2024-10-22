@@ -9,90 +9,92 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">martin2space</span> website</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="index.html">首页</a></li>
-                    <li><a href="about.html">关于</a></li>
-                    <li><a href="projects.html">项目</a></li>
-                    <li><a href="contact.html">联系</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Martin</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="showcase">
-        <div class="container">
-            <h1>欢迎来到我的个人网站</h1>
-            <p>我是一名热爱技术的开发者，专注于创造有意义的数字体验。</p>
-            <a href="#" class="button">了解更多</a>
-        </div>
-    </section>
+    <main>
+        <section id="hero">
+            <h1>Martin</h1>
+            <h2>软件开发者 | 创新者 | 技术爱好者</h2>
+            <a href="#about" class="cta-button">了解更多</a>
+        </section>
 
-    <section id="boxes">
-        <div class="container">
-            <div class="box">
-                <i class="fas fa-code"></i>
-                <h3>Web开发</h3>
-                <p>精通HTML, CSS, JavaScript等前端技术。</p>
+        <section id="featured-project">
+            <div class="content">
+                <h2>最新项目</h2>
+                <h3>智能家居控制系统</h3>
+                <p>结合IoT技术和移动应用，打造全方位的智能家居解决方案。</p>
+                <a href="#" class="learn-more">查看详情</a>
             </div>
-            <div class="box">
-                <i class="fas fa-server"></i>
-                <h3>后端开发</h3>
-                <p>熟练使用Python, Node.js等后端语言。</p>
+            <div class="image">
+                <img src="https://source.unsplash.com/random/800x600?smart+home" alt="智能家居项目展示">
             </div>
-            <div class="box">
-                <i class="fas fa-database"></i>
-                <h3>数据库</h3>
-                <p>熟悉MySQL, MongoDB等数据库系统。</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="cta">
-        <div class="container">
-            <h2>想要了解我的最新项目吗？</h2>
-            <a href="#" class="button" id="subscribe-btn">订阅我的更新</a>
-        </div>
-    </section>
+        <section id="skills">
+            <h2>专业技能</h2>
+            <div class="skill-grid">
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Web开发</h3>
+                    <p>精通HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>移动应用开发</h3>
+                    <p>iOS (Swift), Android (Kotlin)</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-server"></i>
+                    <h3>后端开发</h3>
+                    <p>Node.js, Python, Java</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>数据库</h3>
+                    <p>MySQL, MongoDB, Redis</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="latest-projects">
-        <div class="container">
-            <h2>最新项目</h2>
+        <section id="projects">
+            <h2>精选项目</h2>
             <div class="project-grid">
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200" alt="项目1">
-                    <h3>个人博客系统</h3>
-                    <p>使用React和Node.js开发的全栈博客应用</p>
-                    <a href="#" class="button">查看详情</a>
+                <div class="project-item">
+                    <img src="https://source.unsplash.com/random/600x400?website" alt="项目1">
+                    <h3>响应式企业网站</h3>
+                    <p>为中型企业开发的现代化网站</p>
                 </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200" alt="项目2">
-                    <h3>天气预报App</h3>
-                    <p>基于Vue.js的移动端天气预报应用</p>
-                    <a href="#" class="button">查看详情</a>
+                <div class="project-item">
+                    <img src="https://source.unsplash.com/random/600x400?mobile+app" alt="项目2">
+                    <h3>健康追踪App</h3>
+                    <p>帮助用户监控日常健康状况的移动应用</p>
+                </div>
+                <div class="project-item">
+                    <img src="https://source.unsplash.com/random/600x400?data+visualization" alt="项目3">
+                    <h3>数据可视化平台</h3>
+                    <p>大数据分析和可视化解决方案</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="contact">
+            <h2>联系我</h2>
+            <p>对我的项目感兴趣？让我们一起创造精彩！</p>
+            <a href="mailto:martin@example.com" class="cta-button">发送邮件</a>
+        </section>
+    </main>
 
     <footer>
-        <p>Martin个人网站 &copy; 2023</p>
+        <p>&copy; 2023 Martin. 保留所有权利。</p>
     </footer>
-
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>订阅我的更新</h2>
-            <p>请输入您的邮箱地址以接收我的最新动态：</p>
-            <input type="email" id="email" placeholder="您的邮箱地址">
-            <button id="submit-email">提交</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
