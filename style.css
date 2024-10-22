@@ -164,7 +164,25 @@ p {
 
 /* 联系区 */
 #contact {
-    background-color: #f2f2f2;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+#contact .cta-button {
+    font-size: 18px;
+    padding: 12px 24px;
 }
 
 /* 页脚 */
@@ -175,3 +193,395 @@ footer {
     padding: 20px;
     font-size: 12px;
 }
+
+/* 在文件末尾添加 */
+#services-overview {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#services-overview h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#services-overview ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#services-overview li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #0066cc;
+}
+
+#projects-hero {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#projects-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    color: #666;
+}
+
+/* 更新或添加以下样式 */
+
+#home-section {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+}
+
+#home-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#home-section p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.hero-image {
+    margin-top: 40px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#services {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.service-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0066cc;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0052a3;
+}
+
+background-image: url('images/background.jpg');
+
+/* About Us Section */
+#about {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-text {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#about-hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#about-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#about-hero p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 20px;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#team {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+}
+
+#team h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: #666;
+}
+
+#services-hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#services-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#services-hero p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#service-details {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+#service-details h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.service-process {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.process-step {
+    text-align: center;
+    max-width: 300px;
+    margin: 20px;
+}
+
+.process-step i {
+    font-size: 48px;
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+.process-step h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.process-step p {
+    font-size: 16px;
+    color: #666;
+}
+
+.compact-contact {
+    text-align: center;
+    padding: 25px 15px;  /* 稍微增加内边距 */
+    background-color: #f4f4f4;
+    max-width: 550px;  /* 稍微增加最大宽度 */
+    margin: 0 auto;
+}
+
+.compact-contact h2 {
+    font-size: 12px;  /* 将"Contact Us"的字体大小设置为12px */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* 为了确保这个样式被应用，我们可以添加更具体的选择器 */
+section#contact.compact-contact h2 {
+    font-size: 12px;  /* 重复设置字体大小，以确保它被应用 */
+}
+
+.compact-contact p {
+    font-size: 12px;  /* 保持段落文字大小为12px */
+    max-width: 300px;  /* 稍微增加段落最大宽度 */
+    margin: 0 auto 15px;
+}
+
+.compact-contact .cta-button {
+    font-size: 12px;  /* 保持按钮文字大小为12px */
+    padding: 6px 12px;  /* 稍微增加按钮内边距 */
+}
+
+/* 为小屏幕设备添加响应式设计 */
+@media (max-width: 768px) {
+    .compact-contact {
+        max-width: 90%;
+    }
+}
+
+.compact-contact {
+    padding: 20px 10px;  /* 减小内边距 */
+    max-width: 500px;  /* 稍微减小最大宽度 */
+}
+
+.compact-contact p {
+    font-size: 12px;  /* 减小段落文字大小 */
+    max-width: 250px;  /* 减小段落最大宽度 */
+    margin: 0 auto 12px;
+}
+
+.compact-contact .cta-button {
+    font-size: 12px;  /* 减小按钮文字大小 */
+    padding: 5px 10px;  /* 减小按钮内边距 */
+}
+

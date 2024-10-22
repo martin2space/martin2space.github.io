@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing Studio</title>
+    <title>Our Services - Digital Marketing Studio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -11,9 +11,9 @@
     <header id="top">
         <nav>
             <ul>
-                <li><a href="#" class="current">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="#" class="current">Services</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -21,28 +21,9 @@
     </header>
 
     <main>
-        <section id="home-section">
-            <h1>Welcome to Martin Digital Marketing Studio</h1>
-            <p>We specialize in eCommerce promotion, global branding, and SEO services.</p>
-            <a href="#services" class="cta-button">Explore Our Services</a>
-            <div class="hero-image">
-                <img src="images/hero-image.jpg" alt="Digital Marketing Concept">
-            </div>
-        </section>
-
-        <section id="about">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>We are a team of passionate digital marketers dedicated to helping businesses grow online. With years of experience and a commitment to staying at the forefront of digital trends, we deliver results-driven strategies tailored to each client's unique needs.</p>
-                    <p>Our mission is to empower businesses of all sizes to thrive in the digital landscape, leveraging cutting-edge technologies and creative solutions to drive growth and success.</p>
-                </div>
-                <div class="about-image">
-                    <a href="about.html">
-                        <img src="images/team-photo.jpg" alt="Our Team">
-                    </a>
-                </div>
-            </div>
+        <section id="services-hero">
+            <h1>Our Services</h1>
+            <p>Discover how we can help your business thrive in the digital world</p>
         </section>
 
         <section id="services">
@@ -66,6 +47,27 @@
             </div>
         </section>
 
+        <section id="service-details">
+            <h2>How We Work</h2>
+            <div class="service-process">
+                <div class="process-step">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>1. Strategy</h3>
+                    <p>We develop a customized strategy tailored to your business goals and target audience.</p>
+                </div>
+                <div class="process-step">
+                    <i class="fas fa-cogs"></i>
+                    <h3>2. Implementation</h3>
+                    <p>Our team of experts implements the strategy using cutting-edge tools and techniques.</p>
+                </div>
+                <div class="process-step">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>3. Analysis</h3>
+                    <p>We continuously monitor and analyze the results to optimize performance.</p>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="compact-contact">
             <h2>Contact Us</h2>
             <p>Ready to start your next project? Let's work together!</p>
@@ -78,12 +80,8 @@
     </footer>
 
     <script>
-        document.getElementById('home-link').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+        document.querySelector('a[href="index.html"]').addEventListener('click', function(e) {
+            localStorage.setItem('scrollToTop', 'true');
         });
     </script>
 </body>
