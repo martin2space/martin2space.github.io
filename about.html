@@ -3,27 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Digital Marketing Studio</title>
+    <title>About Us - Martin Digital Marketing Studio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+           
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* 可选：使背景图片固定 */
+        }
+        
+        .about-header {
+            background-image: url('images/team-photo.png'); /* 使用您的图片路径 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 100px 0; /* 调整内边距以适应您的需求 */
+            position: relative;
+        }
+        
+        .about-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色覆盖层，可以调整透明度 */
+        }
+        
+        .about-header-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: #ffffff; /* 文字颜色，可以根据背景图片调整 */
+            max-width: 800px; /* 可以调整以控制内容宽度 */
+            margin: 0 auto; /* 居中内容 */
+        }
+        
+        .about-header-content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .about-header-content p {
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
     <header id="top">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#" class="current">About</a></li>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="about-hero">
-            <h1>About Our Digital Marketing Studio</h1>
-            <p>Learn more about our team and our passion for digital marketing</p>
+        <section id="about-header" class="about-header">
+            <div class="about-header-content">
+                <h1>About Our Digital Marketing Studio</h1>
+                <p>Learn more about our team and our passion for digital marketing</p>
+            </div>
         </section>
 
         <section id="about-content">
@@ -33,7 +80,7 @@
                 <p>We believe in the power of digital marketing to transform businesses and connect them with their ideal customers. Our mission is to empower companies to thrive in the digital landscape by leveraging cutting-edge technologies and creative solutions.</p>
             </div>
             <div class="about-image">
-                <img src="images/team-photo.jpg" alt="Our Team">
+                <img src="images/team-photo.png" alt="Our Team" width="900" height="600">
             </div>
         </section>
 
@@ -57,21 +104,19 @@
                 </div>
             </div>
         </section>
-
-        <section id="contact" class="compact-contact">
-            <h2>Contact Us</h2>
-            <p>Ready to start your next project? Let's work together!</p>
-            <a href="mailto:info@example.com" class="cta-button">Send Email</a>
-        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Digital Marketing Studio. All rights reserved.</p>
+        <p>&copy; 2024 Martin Digital Marketing Studio. All rights reserved.</p>
     </footer>
 
     <script>
-        document.querySelector('a[href="index.html"]').addEventListener('click', function(e) {
-            localStorage.setItem('scrollToTop', 'true');
+        document.querySelector('a[href="#"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
     </script>
 </body>
