@@ -1,51 +1,58 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>联系我 - Martin的个人网站</title>
+    <meta name="description" content="Get in touch with Martin Digital Marketing Studio to discuss your digital marketing needs and start your journey to online success.">
+    <title>Contact Us - Martin Digital Marketing Studio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">Martin</span> 个人网站</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">首页</a></li>
-                    <li><a href="about.html">关于</a></li>
-                    <li><a href="projects.html">项目</a></li>
-                    <li class="current"><a href="contact.html">联系</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header id="top">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="current">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="main">
-        <div class="container">
-            <h1 class="page-title">联系我</h1>
-            <form>
-                <div>
-                    <label for="name">姓名</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div>
-                    <label for="email">邮箱</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="message">消息</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">发送</button>
-            </form>
-        </div>
-    </section>
+    <main>
+        <section id="contact-hero">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us to discuss your digital marketing needs</p>
+        </section>
+
+        <section id="contact-form">
+            <div class="contact-container">
+                <h2>Send us a Message</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>Martin个人网站 &copy; 2024</p>
+        <p>&copy; 2024 Martin Digital Marketing Studio. All rights reserved.</p>
     </footer>
 </body>
 </html>
