@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Martin Digital Marketing Studio specializes in eCommerce promotion, global branding, and SEO services. We help businesses grow online with data-driven digital marketing strategies.">
-    <title>Martin Digital Marketing Studio</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://martin2space.github.io/">
+    <meta property="og:title" content="Martin Digital Marketing Studio">
+    <meta property="og:description" content="Martin Digital Marketing Studio specializes in eCommerce promotion, global branding, and SEO services. We help businesses grow online with data-driven digital marketing strategies.">
+    <meta property="og:image" content="https://martin2space.github.io/images/digital-marketing-team.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://martin2space.github.io/">
+    <meta property="twitter:title" content="Martin Digital Marketing Studio">
+    <meta property="twitter:description" content="Martin Digital Marketing Studio specializes in eCommerce promotion, global branding, and SEO services. We help businesses grow online with data-driven digital marketing strategies.">
+    <meta property="twitter:image" content="https://martin2space.github.io/images/digital-marketing-team.png">
+    
+    <title>Martin Digital Marketing Studio - eCommerce, SEO & Global Branding Services</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header id="top">
         <nav>
+            <div class="nav-brand">
+                <a href="index.html">Martin Digital Marketing Studio</a>
+            </div>
             <ul>
                 <li><a href="index.html" class="current">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -22,7 +41,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="home-hero">
             <div class="hero-content">
                 <h1>Welcome to Martin Digital Marketing Studio</h1>
@@ -38,7 +57,7 @@
                     <p>Our mission is to empower businesses of all sizes to thrive in the digital landscape, leveraging cutting-edge technologies and creative solutions to drive growth and success.</p>
                 </div>
                 <div class="about-image">
-                    <img src="images/digital-marketing-team.png" alt="Digital Marketing Team">
+                    <img src="images/digital-marketing-team.png" alt="Professional digital marketing team collaborating on strategies" loading="lazy">
                 </div>
             </div>
         </section>
@@ -47,17 +66,17 @@
             <h2>Let's make it happen. <span>How I can Help You:</span></h2>
             <div class="services-container">
                 <div class="service">
-                    <img src="images/mountain-icon.png" alt="Get Seen Online">
+                    <img src="images/mountain-icon.png" alt="Mountain icon representing SEO and getting seen online" loading="lazy">
                     <h3>Get Seen Online</h3>
                     <p>Imagine your website popping up on Page 1 of Google or search engines. I'll give you the actionable steps to get your business ranked for your profitable keywords.</p>
                 </div>
                 <div class="service">
-                    <img src="images/chart-icon.png" alt="Build Digital Growth Roadmap">
+                    <img src="images/chart-icon.png" alt="Growth chart icon representing digital growth roadmap" loading="lazy">
                     <h3>Build Digital Growth Roadmap</h3>
                     <p>You don't need a growth spike, but a sustainable one with the right channel mix. I'll help your business build a strong foundation that brings lasting online results.</p>
                 </div>
                 <div class="service">
-                    <img src="images/lightbulb-icon.png" alt="Get Your Time Back">
+                    <img src="images/lightbulb-icon.png" alt="Lightbulb icon representing innovative digital marketing strategies" loading="lazy">
                     <h3>Get Your Time Back</h3>
                     <p>Stop wasting hours struggling with different digital marketing tactics as a busy business owner. I'll show you the digital growth plan you need for your business.</p>
                 </div>
@@ -69,17 +88,6 @@
         <p>&copy; 2024 Martin Digital Marketing Studio. All rights reserved.</p>
     </footer>
 
-    <script>
-        // Smooth scroll to top functionality
-        document.querySelector('a[href="index.html"]').addEventListener('click', function(e) {
-            if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {
-                e.preventDefault();
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore our innovative digital marketing projects and case studies showcasing successful strategies for eCommerce, SEO, and brand development.">
-    <title>Our Projects - Martin Digital Marketing Studio</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://martin2space.github.io/projects.html">
+    <meta property="og:title" content="Our Projects - Martin Digital Marketing Studio">
+    <meta property="og:description" content="Explore our innovative digital marketing projects and case studies showcasing successful strategies for eCommerce, SEO, and brand development.">
+    <meta property="og:image" content="https://martin2space.github.io/images/smart-home-project.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://martin2space.github.io/projects.html">
+    <meta property="twitter:title" content="Our Projects - Martin Digital Marketing Studio">
+    <meta property="twitter:description" content="Explore our innovative digital marketing projects and case studies showcasing successful strategies for eCommerce, SEO, and brand development.">
+    <meta property="twitter:image" content="https://martin2space.github.io/images/smart-home-project.jpg">
+    
+    <title>Our Projects - Martin Digital Marketing Studio | Case Studies & Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header id="top">
         <nav>
+            <div class="nav-brand">
+                <a href="index.html">Martin Digital Marketing Studio</a>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -22,7 +41,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="projects-hero">
             <h1>Our Projects</h1>
             <p>Explore the innovative digital solutions we've created for our clients</p>
@@ -37,26 +56,26 @@
                     <li>Intuitive mobile app interface</li>
                     <li>AI-driven automation features</li>
                 </ul>
-                <a href="#" class="cta-button">View Case Study</a>
+                <a href="contact.html" class="cta-button">View Case Study</a>
             </div>
             <div class="image">
-                <img src="images/smart-home-project.jpg" alt="Smart Home Project Showcase">
+                <img src="images/smart-home-project.jpg" alt="Smart home control system project showcasing IoT technology integration" loading="lazy">
             </div>
         </section>
 
         <section id="project-grid">
             <div class="project-item">
-                <img src="images/ecommerce-platform.jpg" alt="E-commerce Platform">
+                <img src="images/ecommerce-platform.jpg" alt="E-commerce platform development project for online retail businesses" loading="lazy">
                 <h3>E-commerce Platform</h3>
                 <p>A full-featured e-commerce solution for small to medium businesses</p>
             </div>
             <div class="project-item">
-                <img src="images/seo-optimization.jpg" alt="SEO Optimization">
+                <img src="images/seo-optimization.jpg" alt="SEO optimization project showing improved search engine rankings" loading="lazy">
                 <h3>SEO Optimization Service</h3>
                 <p>Helping clients improve their search engine rankings and organic traffic</p>
             </div>
             <div class="project-item">
-                <img src="images/brand-redesign.jpg" alt="Brand Redesign">
+                <img src="images/brand-redesign.jpg" alt="Brand redesign project showcasing modern brand identity transformation" loading="lazy">
                 <h3>Brand Redesign Project</h3>
                 <p>Modernizing the brand image for a traditional company</p>
             </div>
@@ -66,7 +85,7 @@
         <section id="contact" class="compact-contact">
             <h2>Contact Us</h2>
             <p>Ready to start your next project? Let's work together!</p>
-            <a href="mailto:info@example.com" class="cta-button">Send Email</a>
+            <a href="mailto:info@example.com" class="cta-button" target="_blank" rel="noopener noreferrer">Send Email</a>
         </section>
     </main>
 
@@ -74,10 +93,6 @@
         <p>&copy; 2024 Martin Digital Marketing Studio. All rights reserved.</p>
     </footer>
 
-    <script>
-        document.querySelector('a[href="index.html"]').addEventListener('click', function(e) {
-            localStorage.setItem('scrollToTop', 'true');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

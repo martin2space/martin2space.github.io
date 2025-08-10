@@ -5,13 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Get in touch with Martin Digital Marketing Studio to discuss your digital marketing needs and start your journey to online success.">
-    <title>Contact Us - Martin Digital Marketing Studio</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://martin2space.github.io/contact.html">
+    <meta property="og:title" content="Contact Us - Martin Digital Marketing Studio">
+    <meta property="og:description" content="Get in touch with Martin Digital Marketing Studio to discuss your digital marketing needs and start your journey to online success.">
+    <meta property="og:image" content="https://martin2space.github.io/images/digital-marketing-team.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://martin2space.github.io/contact.html">
+    <meta property="twitter:title" content="Contact Us - Martin Digital Marketing Studio">
+    <meta property="twitter:description" content="Get in touch with Martin Digital Marketing Studio to discuss your digital marketing needs and start your journey to online success.">
+    <meta property="twitter:image" content="https://martin2space.github.io/images/digital-marketing-team.png">
+    
+    <title>Contact Us - Martin Digital Marketing Studio | Get Started Today</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header id="top">
         <nav>
+            <div class="nav-brand">
+                <a href="index.html">Martin Digital Marketing Studio</a>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -23,7 +42,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="contact-hero">
             <h1>Contact Us</h1>
             <p>Get in touch with us to discuss your digital marketing needs</p>
@@ -32,20 +51,24 @@
         <section id="contact-form">
             <div class="contact-container">
                 <h2>Send us a Message</h2>
-                <form>
+                <form role="form" aria-label="Contact form">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-help">
+                        <div id="name-help" class="help-text">Please enter your full name</div>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-help">
+                        <div id="email-help" class="help-text">Please enter a valid email address</div>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required aria-required="true" aria-describedby="message-help" rows="5"></textarea>
+                        <div id="message-help" class="help-text">Please describe your project or inquiry</div>
                     </div>
-                    <button type="submit" class="cta-button">Send Message</button>
+                    <button type="submit" class="cta-button" aria-describedby="submit-help">Send Message</button>
+                    <div id="submit-help" class="help-text">Required fields are marked with *</div>
                 </form>
             </div>
         </section>
@@ -54,5 +77,7 @@
     <footer>
         <p>&copy; 2024 Martin Digital Marketing Studio. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

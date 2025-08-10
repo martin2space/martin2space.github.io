@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover our comprehensive digital marketing services including SEO, eCommerce promotion, and global branding solutions to help your business thrive online.">
-    <title>Our Services - Martin Digital Marketing Studio</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://martin2space.github.io/services.html">
+    <meta property="og:title" content="Our Services - Martin Digital Marketing Studio">
+    <meta property="og:description" content="Discover our comprehensive digital marketing services including SEO, eCommerce promotion, and global branding solutions to help your business thrive online.">
+    <meta property="og:image" content="https://martin2space.github.io/images/digital-marketing-team.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://martin2space.github.io/services.html">
+    <meta property="twitter:title" content="Our Services - Martin Digital Marketing Studio">
+    <meta property="twitter:description" content="Discover our comprehensive digital marketing services including SEO, eCommerce promotion, and global branding solutions to help your business thrive online.">
+    <meta property="twitter:image" content="https://martin2space.github.io/images/digital-marketing-team.png">
+    
+    <title>Our Services - Martin Digital Marketing Studio | SEO, eCommerce & Branding</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header id="top">
         <nav>
+            <div class="nav-brand">
+                <a href="index.html">Martin Digital Marketing Studio</a>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -22,7 +41,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="services-hero">
             <h1>Our Services</h1>
             <p>Discover how we can help your business thrive in the digital world</p>
@@ -32,17 +51,17 @@
             <h2>Our Key Services</h2>
             <div class="service-grid">
                 <div class="service-item">
-                    <img src="images/seo-icon.png" alt="SEO Icon">
+                    <img src="images/seo-icon.png" alt="SEO optimization icon representing search engine optimization services" loading="lazy">
                     <h3>SEO</h3>
                     <p>Optimize your online presence and improve search engine rankings.</p>
                 </div>
                 <div class="service-item">
-                    <img src="images/ecommerce-icon.png" alt="eCommerce Icon">
+                    <img src="images/ecommerce-icon.png" alt="E-commerce icon representing online store optimization services" loading="lazy">
                     <h3>eCommerce</h3>
                     <p>Boost your online sales with our tailored eCommerce solutions.</p>
                 </div>
                 <div class="service-item">
-                    <img src="images/branding-icon.png" alt="Global Branding Icon">
+                    <img src="images/branding-icon.png" alt="Global branding icon representing international brand development services" loading="lazy">
                     <h3>Global Branding</h3>
                     <p>Establish a strong, consistent brand identity across international markets.</p>
                 </div>
@@ -73,7 +92,7 @@
         <section id="contact" class="compact-contact">
             <h2>Contact Us</h2>
             <p>Ready to start your next project? Let's work together!</p>
-            <a href="mailto:info@example.com" class="cta-button">Send Email</a>
+            <a href="mailto:info@example.com" class="cta-button" target="_blank" rel="noopener noreferrer">Send Email</a>
         </section>
     </main>
 
@@ -81,10 +100,6 @@
         <p>&copy; 2024 Martin Digital Marketing Studio. All rights reserved.</p>
     </footer>
 
-    <script>
-        document.querySelector('a[href="index.html"]').addEventListener('click', function(e) {
-            localStorage.setItem('scrollToTop', 'true');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

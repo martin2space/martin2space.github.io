@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn about Martin Digital Marketing Studio's team, mission, and passion for helping businesses succeed in the digital landscape with innovative marketing solutions.">
-    <title>About Us - Martin Digital Marketing Studio</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://martin2space.github.io/about.html">
+    <meta property="og:title" content="About Us - Martin Digital Marketing Studio">
+    <meta property="og:description" content="Learn about Martin Digital Marketing Studio's team, mission, and passion for helping businesses succeed in the digital landscape with innovative marketing solutions.">
+    <meta property="og:image" content="https://martin2space.github.io/images/team-photo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://martin2space.github.io/about.html">
+    <meta property="twitter:title" content="About Us - Martin Digital Marketing Studio">
+    <meta property="twitter:description" content="Learn about Martin Digital Marketing Studio's team, mission, and passion for helping businesses succeed in the digital landscape with innovative marketing solutions.">
+    <meta property="twitter:image" content="https://martin2space.github.io/images/team-photo.png">
+    
+    <title>About Us - Martin Digital Marketing Studio | Our Team & Mission</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
@@ -55,8 +70,12 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header id="top">
         <nav>
+            <div class="nav-brand">
+                <a href="index.html">Martin Digital Marketing Studio</a>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="current">About</a></li>
@@ -68,10 +87,10 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="about-header" class="about-header">
             <div class="about-header-content">
-                <h1>About Our Digital Marketing Studio</h1>
+                <h1>About Martin Digital Marketing Studio</h1>
                 <p>Learn more about our team and our passion for digital marketing</p>
             </div>
         </section>
@@ -79,11 +98,11 @@
         <section id="about-content">
             <div class="about-text">
                 <h2>Our Story</h2>
-                <p>Founded in 2020, our Digital Marketing Studio has quickly become a leader in providing innovative digital solutions for businesses of all sizes. Our team of experts combines creativity with data-driven strategies to deliver exceptional results for our clients.</p>
+                <p>Founded in 2020, Martin Digital Marketing Studio has quickly become a leader in providing innovative digital solutions for businesses of all sizes. Our team of experts combines creativity with data-driven strategies to deliver exceptional results for our clients.</p>
                 <p>We believe in the power of digital marketing to transform businesses and connect them with their ideal customers. Our mission is to empower companies to thrive in the digital landscape by leveraging cutting-edge technologies and creative solutions.</p>
             </div>
             <div class="about-image">
-                <img src="images/team-photo.png" alt="Our Team" width="900" height="600">
+                <img src="images/team-photo.png" alt="Martin Digital Marketing Studio team members working together" width="900" height="600" loading="lazy">
             </div>
         </section>
 
@@ -91,17 +110,17 @@
             <h2>Meet Our Team</h2>
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="images/team-member-1.jpg" alt="Team Member 1">
+                    <img src="images/team-member-1.jpg" alt="John Doe, Founder and CEO of Martin Digital Marketing Studio" loading="lazy">
                     <h3>John Doe</h3>
                     <p>Founder & CEO</p>
                 </div>
                 <div class="team-member">
-                    <img src="images/team-member-2.jpg" alt="Team Member 2">
+                    <img src="images/team-member-2.jpg" alt="Jane Smith, Head of SEO at Martin Digital Marketing Studio" loading="lazy">
                     <h3>Jane Smith</h3>
                     <p>Head of SEO</p>
                 </div>
                 <div class="team-member">
-                    <img src="images/team-member-3.jpg" alt="Team Member 3">
+                    <img src="images/team-member-3.jpg" alt="Mike Johnson, Lead Designer at Martin Digital Marketing Studio" loading="lazy">
                     <h3>Mike Johnson</h3>
                     <p>Lead Designer</p>
                 </div>
@@ -113,14 +132,6 @@
         <p>&copy; 2024 Martin Digital Marketing Studio. All rights reserved.</p>
     </footer>
 
-    <script>
-        document.querySelector('a[href="#"]').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
